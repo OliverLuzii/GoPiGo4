@@ -1,0 +1,21 @@
+[01m[K/home/blacknav/blacknav/src/odom_pub.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.hpp: No such file or directory
+    7 | #include [01;31m[K"tf2_ros/transform_broadcaster.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/odom_pub.dir/build.make:76: CMakeFiles/odom_pub.dir/src/odom_pub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/odom_pub.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/blacknav/blacknav/src/motor_controller.cpp:[m[K In member function ‘[01m[Kvoid TwistSubscriber::[01;32m[Ktwist_callback[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/blacknav/blacknav/src/motor_controller.cpp:64:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((theta_dot_L >> 8) & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+   64 |             [01;35m[K((theta_dot_L >> 8) & 0xFF)[m[K,
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/blacknav/blacknav/src/motor_controller.cpp:65:26:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(theta_dot_L & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+   65 |             [01;35m[K(theta_dot_L & 0xFF)[m[K
+      |             [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/blacknav/blacknav/src/motor_controller.cpp:72:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((theta_dot_R >> 8) & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+   72 |             [01;35m[K((theta_dot_R >> 8) & 0xFF)[m[K,
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/blacknav/blacknav/src/motor_controller.cpp:73:27:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(theta_dot_R & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+   73 |             [01;35m[K(theta_dot_R  & 0xFF)[m[K
+      |             [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+gmake: *** [Makefile:146: all] Error 2

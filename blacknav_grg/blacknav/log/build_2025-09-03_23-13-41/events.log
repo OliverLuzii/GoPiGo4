@@ -1,0 +1,545 @@
+[0.000000] (-) TimerEvent: {}
+[0.006275] (blacknav) JobQueued: {'identifier': 'blacknav', 'dependencies': OrderedDict()}
+[0.036365] (blacknav) JobStarted: {'identifier': 'blacknav'}
+[0.093597] (-) TimerEvent: {}
+[0.205793] (-) TimerEvent: {}
+[0.311762] (-) TimerEvent: {}
+[0.416814] (-) TimerEvent: {}
+[0.440604] (blacknav) JobProgress: {'identifier': 'blacknav', 'progress': 'cmake'}
+[0.470022] (blacknav) JobProgress: {'identifier': 'blacknav', 'progress': 'build'}
+[0.515084] (blacknav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blacknav/blacknav/build/blacknav', '--', '-j12', '-l12'], 'cwd': '/home/blacknav/blacknav/build/blacknav', 'env': OrderedDict({'HOSTNAME': 'ER01', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/blacknav', 'OLDPWD': '/home/blacknav', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/home/blacknav/blacknav/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/blacknav/blacknav/install/blacknav:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/blacknav/blacknav/build/blacknav', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/blacknav/blacknav/install/blacknav:/opt/ros/jazzy'}), 'shell': False}
+[0.581177] (-) TimerEvent: {}
+[0.685252] (-) TimerEvent: {}
+[0.789157] (-) TimerEvent: {}
+[0.893076] (-) TimerEvent: {}
+[0.997454] (-) TimerEvent: {}
+[1.101660] (-) TimerEvent: {}
+[1.205812] (-) TimerEvent: {}
+[1.310328] (-) TimerEvent: {}
+[1.418125] (-) TimerEvent: {}
+[1.525121] (-) TimerEvent: {}
+[1.629695] (-) TimerEvent: {}
+[1.734458] (-) TimerEvent: {}
+[1.841539] (-) TimerEvent: {}
+[1.946114] (-) TimerEvent: {}
+[1.974417] (blacknav) StdoutLine: {'line': b'[ 50%] Built target motor_controller\n'}
+[2.046850] (-) TimerEvent: {}
+[2.150823] (-) TimerEvent: {}
+[2.255015] (-) TimerEvent: {}
+[2.260711] (blacknav) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/odom_pub.dir/src/odom_pub.cpp.o\x1b[0m\n'}
+[2.355573] (-) TimerEvent: {}
+[2.459509] (-) TimerEvent: {}
+[2.563698] (-) TimerEvent: {}
+[2.667702] (-) TimerEvent: {}
+[2.771656] (-) TimerEvent: {}
+[2.875585] (-) TimerEvent: {}
+[2.979626] (-) TimerEvent: {}
+[3.083642] (-) TimerEvent: {}
+[3.188129] (-) TimerEvent: {}
+[3.295125] (-) TimerEvent: {}
+[3.402533] (-) TimerEvent: {}
+[3.509311] (-) TimerEvent: {}
+[3.614085] (-) TimerEvent: {}
+[3.720784] (-) TimerEvent: {}
+[3.825092] (-) TimerEvent: {}
+[3.932451] (-) TimerEvent: {}
+[4.039339] (-) TimerEvent: {}
+[4.143209] (-) TimerEvent: {}
+[4.247295] (-) TimerEvent: {}
+[4.351262] (-) TimerEvent: {}
+[4.455282] (-) TimerEvent: {}
+[4.559260] (-) TimerEvent: {}
+[4.663549] (-) TimerEvent: {}
+[4.767720] (-) TimerEvent: {}
+[4.871829] (-) TimerEvent: {}
+[4.975909] (-) TimerEvent: {}
+[5.080621] (-) TimerEvent: {}
+[5.188046] (-) TimerEvent: {}
+[5.295078] (-) TimerEvent: {}
+[5.399172] (-) TimerEvent: {}
+[5.503374] (-) TimerEvent: {}
+[5.607312] (-) TimerEvent: {}
+[5.711205] (-) TimerEvent: {}
+[5.815167] (-) TimerEvent: {}
+[5.919304] (-) TimerEvent: {}
+[6.023304] (-) TimerEvent: {}
+[6.127447] (-) TimerEvent: {}
+[6.231718] (-) TimerEvent: {}
+[6.335831] (-) TimerEvent: {}
+[6.439745] (-) TimerEvent: {}
+[6.543668] (-) TimerEvent: {}
+[6.647643] (-) TimerEvent: {}
+[6.751536] (-) TimerEvent: {}
+[6.855510] (-) TimerEvent: {}
+[6.959429] (-) TimerEvent: {}
+[7.063493] (-) TimerEvent: {}
+[7.167891] (-) TimerEvent: {}
+[7.272064] (-) TimerEvent: {}
+[7.376282] (-) TimerEvent: {}
+[7.480284] (-) TimerEvent: {}
+[7.584250] (-) TimerEvent: {}
+[7.688232] (-) TimerEvent: {}
+[7.792242] (-) TimerEvent: {}
+[7.896180] (-) TimerEvent: {}
+[8.000398] (-) TimerEvent: {}
+[8.104327] (-) TimerEvent: {}
+[8.208260] (-) TimerEvent: {}
+[8.312296] (-) TimerEvent: {}
+[8.416722] (-) TimerEvent: {}
+[8.523745] (-) TimerEvent: {}
+[8.627632] (-) TimerEvent: {}
+[8.731514] (-) TimerEvent: {}
+[8.835321] (-) TimerEvent: {}
+[8.939242] (-) TimerEvent: {}
+[9.043164] (-) TimerEvent: {}
+[9.147027] (-) TimerEvent: {}
+[9.250853] (-) TimerEvent: {}
+[9.354938] (-) TimerEvent: {}
+[9.458750] (-) TimerEvent: {}
+[9.562636] (-) TimerEvent: {}
+[9.667006] (-) TimerEvent: {}
+[9.771071] (-) TimerEvent: {}
+[9.875325] (-) TimerEvent: {}
+[9.979413] (-) TimerEvent: {}
+[10.083278] (-) TimerEvent: {}
+[10.187197] (-) TimerEvent: {}
+[10.291355] (-) TimerEvent: {}
+[10.395577] (-) TimerEvent: {}
+[10.501034] (-) TimerEvent: {}
+[10.604919] (-) TimerEvent: {}
+[10.709305] (-) TimerEvent: {}
+[10.813480] (-) TimerEvent: {}
+[10.917485] (-) TimerEvent: {}
+[11.021337] (-) TimerEvent: {}
+[11.125306] (-) TimerEvent: {}
+[11.229264] (-) TimerEvent: {}
+[11.333210] (-) TimerEvent: {}
+[11.437254] (-) TimerEvent: {}
+[11.541195] (-) TimerEvent: {}
+[11.645138] (-) TimerEvent: {}
+[11.749255] (-) TimerEvent: {}
+[11.853419] (-) TimerEvent: {}
+[11.957424] (-) TimerEvent: {}
+[12.061392] (-) TimerEvent: {}
+[12.165315] (-) TimerEvent: {}
+[12.269308] (-) TimerEvent: {}
+[12.373311] (-) TimerEvent: {}
+[12.477305] (-) TimerEvent: {}
+[12.581402] (-) TimerEvent: {}
+[12.685376] (-) TimerEvent: {}
+[12.789356] (-) TimerEvent: {}
+[12.893396] (-) TimerEvent: {}
+[12.997391] (-) TimerEvent: {}
+[13.101492] (-) TimerEvent: {}
+[13.205370] (-) TimerEvent: {}
+[13.309372] (-) TimerEvent: {}
+[13.413264] (-) TimerEvent: {}
+[13.517216] (-) TimerEvent: {}
+[13.621257] (-) TimerEvent: {}
+[13.725142] (-) TimerEvent: {}
+[13.829097] (-) TimerEvent: {}
+[13.933302] (-) TimerEvent: {}
+[14.037876] (-) TimerEvent: {}
+[14.141931] (-) TimerEvent: {}
+[14.245982] (-) TimerEvent: {}
+[14.350127] (-) TimerEvent: {}
+[14.454268] (-) TimerEvent: {}
+[14.558380] (-) TimerEvent: {}
+[14.662273] (-) TimerEvent: {}
+[14.766390] (-) TimerEvent: {}
+[14.870255] (-) TimerEvent: {}
+[14.974454] (-) TimerEvent: {}
+[15.078356] (-) TimerEvent: {}
+[15.182304] (-) TimerEvent: {}
+[15.286317] (-) TimerEvent: {}
+[15.390282] (-) TimerEvent: {}
+[15.494256] (-) TimerEvent: {}
+[15.598174] (-) TimerEvent: {}
+[15.702271] (-) TimerEvent: {}
+[15.806297] (-) TimerEvent: {}
+[15.910308] (-) TimerEvent: {}
+[16.014283] (-) TimerEvent: {}
+[16.118345] (-) TimerEvent: {}
+[16.222249] (-) TimerEvent: {}
+[16.326609] (-) TimerEvent: {}
+[16.430773] (-) TimerEvent: {}
+[16.534764] (-) TimerEvent: {}
+[16.638776] (-) TimerEvent: {}
+[16.742740] (-) TimerEvent: {}
+[16.846984] (-) TimerEvent: {}
+[16.951232] (-) TimerEvent: {}
+[17.055203] (-) TimerEvent: {}
+[17.159233] (-) TimerEvent: {}
+[17.263140] (-) TimerEvent: {}
+[17.367466] (-) TimerEvent: {}
+[17.471928] (-) TimerEvent: {}
+[17.579190] (-) TimerEvent: {}
+[17.683548] (-) TimerEvent: {}
+[17.787722] (-) TimerEvent: {}
+[17.891874] (-) TimerEvent: {}
+[17.995834] (-) TimerEvent: {}
+[18.099827] (-) TimerEvent: {}
+[18.203856] (-) TimerEvent: {}
+[18.307850] (-) TimerEvent: {}
+[18.411898] (-) TimerEvent: {}
+[18.515879] (-) TimerEvent: {}
+[18.619926] (-) TimerEvent: {}
+[18.723855] (-) TimerEvent: {}
+[18.827986] (-) TimerEvent: {}
+[18.932140] (-) TimerEvent: {}
+[19.036322] (-) TimerEvent: {}
+[19.140296] (-) TimerEvent: {}
+[19.244250] (-) TimerEvent: {}
+[19.348310] (-) TimerEvent: {}
+[19.452344] (-) TimerEvent: {}
+[19.556280] (-) TimerEvent: {}
+[19.660275] (-) TimerEvent: {}
+[19.765945] (-) TimerEvent: {}
+[19.871354] (-) TimerEvent: {}
+[19.976772] (-) TimerEvent: {}
+[20.082229] (-) TimerEvent: {}
+[20.187630] (-) TimerEvent: {}
+[20.293076] (-) TimerEvent: {}
+[20.398487] (-) TimerEvent: {}
+[20.503910] (-) TimerEvent: {}
+[20.609440] (-) TimerEvent: {}
+[20.714933] (-) TimerEvent: {}
+[20.820635] (-) TimerEvent: {}
+[20.927736] (-) TimerEvent: {}
+[21.031717] (-) TimerEvent: {}
+[21.135833] (-) TimerEvent: {}
+[21.239942] (-) TimerEvent: {}
+[21.343952] (-) TimerEvent: {}
+[21.448030] (-) TimerEvent: {}
+[21.552208] (-) TimerEvent: {}
+[21.656259] (-) TimerEvent: {}
+[21.760247] (-) TimerEvent: {}
+[21.864305] (-) TimerEvent: {}
+[21.968726] (-) TimerEvent: {}
+[22.074234] (-) TimerEvent: {}
+[22.178335] (-) TimerEvent: {}
+[22.282526] (-) TimerEvent: {}
+[22.386832] (-) TimerEvent: {}
+[22.490915] (-) TimerEvent: {}
+[22.594877] (-) TimerEvent: {}
+[22.698859] (-) TimerEvent: {}
+[22.802779] (-) TimerEvent: {}
+[22.907088] (-) TimerEvent: {}
+[23.011071] (-) TimerEvent: {}
+[23.115350] (-) TimerEvent: {}
+[23.219439] (-) TimerEvent: {}
+[23.323396] (-) TimerEvent: {}
+[23.427389] (-) TimerEvent: {}
+[23.531307] (-) TimerEvent: {}
+[23.635297] (-) TimerEvent: {}
+[23.739378] (-) TimerEvent: {}
+[23.843306] (-) TimerEvent: {}
+[23.947318] (-) TimerEvent: {}
+[24.051294] (-) TimerEvent: {}
+[24.155272] (-) TimerEvent: {}
+[24.259353] (-) TimerEvent: {}
+[24.363995] (-) TimerEvent: {}
+[24.467959] (-) TimerEvent: {}
+[24.571894] (-) TimerEvent: {}
+[24.676097] (-) TimerEvent: {}
+[24.780291] (-) TimerEvent: {}
+[24.884374] (-) TimerEvent: {}
+[24.988925] (-) TimerEvent: {}
+[25.092913] (-) TimerEvent: {}
+[25.196938] (-) TimerEvent: {}
+[25.301315] (-) TimerEvent: {}
+[25.408081] (-) TimerEvent: {}
+[25.515643] (-) TimerEvent: {}
+[25.619593] (-) TimerEvent: {}
+[25.723591] (-) TimerEvent: {}
+[25.827807] (-) TimerEvent: {}
+[25.932025] (-) TimerEvent: {}
+[26.036292] (-) TimerEvent: {}
+[26.140462] (-) TimerEvent: {}
+[26.244514] (-) TimerEvent: {}
+[26.348567] (-) TimerEvent: {}
+[26.452561] (-) TimerEvent: {}
+[26.556871] (-) TimerEvent: {}
+[26.660883] (-) TimerEvent: {}
+[26.764876] (-) TimerEvent: {}
+[26.868841] (-) TimerEvent: {}
+[26.972883] (-) TimerEvent: {}
+[27.076906] (-) TimerEvent: {}
+[27.180999] (-) TimerEvent: {}
+[27.285141] (-) TimerEvent: {}
+[27.389226] (-) TimerEvent: {}
+[27.493150] (-) TimerEvent: {}
+[27.597458] (-) TimerEvent: {}
+[27.704607] (-) TimerEvent: {}
+[27.808539] (-) TimerEvent: {}
+[27.912429] (-) TimerEvent: {}
+[27.981658] (blacknav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blacknav/blacknav/src/odom_pub.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble OdomPublisher::\x1b[01;32m\x1b[Kget_encoder_radians\x1b[m\x1b[K(unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.988384] (blacknav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blacknav/blacknav/src/odom_pub.cpp:111:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kmessage_type\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wnarrowing\x1b[m\x1b[K]\n'}
+[27.994390] (blacknav) StderrLine: {'line': b'  111 |             \x1b[01;35m\x1b[Kmessage_type\x1b[m\x1b[K,\n'}
+[28.000194] (blacknav) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.012909] (-) TimerEvent: {}
+[28.116921] (-) TimerEvent: {}
+[28.221350] (-) TimerEvent: {}
+[28.325344] (-) TimerEvent: {}
+[28.429331] (-) TimerEvent: {}
+[28.533276] (-) TimerEvent: {}
+[28.637269] (-) TimerEvent: {}
+[28.741600] (-) TimerEvent: {}
+[28.848696] (-) TimerEvent: {}
+[28.952761] (-) TimerEvent: {}
+[29.056706] (-) TimerEvent: {}
+[29.160734] (-) TimerEvent: {}
+[29.264664] (-) TimerEvent: {}
+[29.368626] (-) TimerEvent: {}
+[29.472588] (-) TimerEvent: {}
+[29.576504] (-) TimerEvent: {}
+[29.680451] (-) TimerEvent: {}
+[29.784432] (-) TimerEvent: {}
+[29.888731] (-) TimerEvent: {}
+[29.993049] (-) TimerEvent: {}
+[30.097043] (-) TimerEvent: {}
+[30.200782] (-) TimerEvent: {}
+[30.304744] (-) TimerEvent: {}
+[30.408733] (-) TimerEvent: {}
+[30.512758] (-) TimerEvent: {}
+[30.616836] (-) TimerEvent: {}
+[30.720886] (-) TimerEvent: {}
+[30.824880] (-) TimerEvent: {}
+[30.930471] (-) TimerEvent: {}
+[31.035954] (-) TimerEvent: {}
+[31.141361] (-) TimerEvent: {}
+[31.246669] (-) TimerEvent: {}
+[31.351916] (-) TimerEvent: {}
+[31.457157] (-) TimerEvent: {}
+[31.562477] (-) TimerEvent: {}
+[31.668019] (-) TimerEvent: {}
+[31.773354] (-) TimerEvent: {}
+[31.878594] (-) TimerEvent: {}
+[31.983944] (-) TimerEvent: {}
+[32.089310] (-) TimerEvent: {}
+[32.195004] (-) TimerEvent: {}
+[32.300356] (-) TimerEvent: {}
+[32.405652] (-) TimerEvent: {}
+[32.510910] (-) TimerEvent: {}
+[32.616079] (-) TimerEvent: {}
+[32.721340] (-) TimerEvent: {}
+[32.826701] (-) TimerEvent: {}
+[32.932214] (-) TimerEvent: {}
+[33.038181] (-) TimerEvent: {}
+[33.142346] (-) TimerEvent: {}
+[33.246301] (-) TimerEvent: {}
+[33.350475] (-) TimerEvent: {}
+[33.454885] (-) TimerEvent: {}
+[33.559193] (-) TimerEvent: {}
+[33.663263] (-) TimerEvent: {}
+[33.767287] (-) TimerEvent: {}
+[33.871707] (-) TimerEvent: {}
+[33.975595] (-) TimerEvent: {}
+[34.079713] (-) TimerEvent: {}
+[34.184912] (-) TimerEvent: {}
+[34.288951] (-) TimerEvent: {}
+[34.393188] (-) TimerEvent: {}
+[34.497525] (-) TimerEvent: {}
+[34.601579] (-) TimerEvent: {}
+[34.705604] (-) TimerEvent: {}
+[34.809677] (-) TimerEvent: {}
+[34.913874] (-) TimerEvent: {}
+[35.017967] (-) TimerEvent: {}
+[35.122230] (-) TimerEvent: {}
+[35.226966] (-) TimerEvent: {}
+[35.330885] (-) TimerEvent: {}
+[35.434998] (-) TimerEvent: {}
+[35.539499] (-) TimerEvent: {}
+[35.643504] (-) TimerEvent: {}
+[35.747445] (-) TimerEvent: {}
+[35.851403] (-) TimerEvent: {}
+[35.955381] (-) TimerEvent: {}
+[36.059430] (-) TimerEvent: {}
+[36.163392] (-) TimerEvent: {}
+[36.267363] (-) TimerEvent: {}
+[36.371335] (-) TimerEvent: {}
+[36.475373] (-) TimerEvent: {}
+[36.579441] (-) TimerEvent: {}
+[36.683877] (-) TimerEvent: {}
+[36.790907] (-) TimerEvent: {}
+[36.894718] (-) TimerEvent: {}
+[36.998660] (-) TimerEvent: {}
+[37.102560] (-) TimerEvent: {}
+[37.206388] (-) TimerEvent: {}
+[37.310255] (-) TimerEvent: {}
+[37.414268] (-) TimerEvent: {}
+[37.518326] (-) TimerEvent: {}
+[37.622370] (-) TimerEvent: {}
+[37.726596] (-) TimerEvent: {}
+[37.833596] (-) TimerEvent: {}
+[37.937461] (-) TimerEvent: {}
+[38.041398] (-) TimerEvent: {}
+[38.145329] (-) TimerEvent: {}
+[38.249259] (-) TimerEvent: {}
+[38.353266] (-) TimerEvent: {}
+[38.457193] (-) TimerEvent: {}
+[38.561223] (-) TimerEvent: {}
+[38.665316] (-) TimerEvent: {}
+[38.769355] (-) TimerEvent: {}
+[38.873966] (-) TimerEvent: {}
+[38.978013] (-) TimerEvent: {}
+[39.082018] (-) TimerEvent: {}
+[39.185937] (-) TimerEvent: {}
+[39.289997] (-) TimerEvent: {}
+[39.394050] (-) TimerEvent: {}
+[39.498078] (-) TimerEvent: {}
+[39.602117] (-) TimerEvent: {}
+[39.706205] (-) TimerEvent: {}
+[39.810055] (-) TimerEvent: {}
+[39.914067] (-) TimerEvent: {}
+[40.018657] (-) TimerEvent: {}
+[40.126031] (-) TimerEvent: {}
+[40.231997] (-) TimerEvent: {}
+[40.337322] (-) TimerEvent: {}
+[40.442902] (-) TimerEvent: {}
+[40.548427] (-) TimerEvent: {}
+[40.653954] (-) TimerEvent: {}
+[40.759344] (-) TimerEvent: {}
+[40.864866] (-) TimerEvent: {}
+[40.970320] (-) TimerEvent: {}
+[41.075859] (-) TimerEvent: {}
+[41.180444] (-) TimerEvent: {}
+[41.285751] (-) TimerEvent: {}
+[41.390134] (-) TimerEvent: {}
+[41.496134] (-) TimerEvent: {}
+[41.600183] (-) TimerEvent: {}
+[41.704401] (-) TimerEvent: {}
+[41.808271] (-) TimerEvent: {}
+[41.912193] (-) TimerEvent: {}
+[42.016166] (-) TimerEvent: {}
+[42.120368] (-) TimerEvent: {}
+[42.224419] (-) TimerEvent: {}
+[42.328790] (-) TimerEvent: {}
+[42.432863] (-) TimerEvent: {}
+[42.536912] (-) TimerEvent: {}
+[42.640878] (-) TimerEvent: {}
+[42.744802] (-) TimerEvent: {}
+[42.848787] (-) TimerEvent: {}
+[42.952798] (-) TimerEvent: {}
+[43.056790] (-) TimerEvent: {}
+[43.160860] (-) TimerEvent: {}
+[43.264844] (-) TimerEvent: {}
+[43.369049] (-) TimerEvent: {}
+[43.474657] (-) TimerEvent: {}
+[43.580081] (-) TimerEvent: {}
+[43.685364] (-) TimerEvent: {}
+[43.790739] (-) TimerEvent: {}
+[43.896165] (-) TimerEvent: {}
+[44.001614] (-) TimerEvent: {}
+[44.106909] (-) TimerEvent: {}
+[44.212284] (-) TimerEvent: {}
+[44.317691] (-) TimerEvent: {}
+[44.421845] (-) TimerEvent: {}
+[44.525880] (-) TimerEvent: {}
+[44.630045] (-) TimerEvent: {}
+[44.733984] (-) TimerEvent: {}
+[44.837900] (-) TimerEvent: {}
+[44.941882] (-) TimerEvent: {}
+[45.045993] (-) TimerEvent: {}
+[45.150099] (-) TimerEvent: {}
+[45.254349] (-) TimerEvent: {}
+[45.358564] (-) TimerEvent: {}
+[45.463752] (-) TimerEvent: {}
+[45.567884] (-) TimerEvent: {}
+[45.671886] (-) TimerEvent: {}
+[45.776224] (-) TimerEvent: {}
+[45.880117] (-) TimerEvent: {}
+[45.984543] (-) TimerEvent: {}
+[46.091052] (-) TimerEvent: {}
+[46.197180] (-) TimerEvent: {}
+[46.301345] (-) TimerEvent: {}
+[46.405339] (-) TimerEvent: {}
+[46.509380] (-) TimerEvent: {}
+[46.613240] (-) TimerEvent: {}
+[46.717640] (-) TimerEvent: {}
+[46.822956] (-) TimerEvent: {}
+[46.926880] (-) TimerEvent: {}
+[47.030875] (-) TimerEvent: {}
+[47.134847] (-) TimerEvent: {}
+[47.238838] (-) TimerEvent: {}
+[47.342976] (-) TimerEvent: {}
+[47.446996] (-) TimerEvent: {}
+[47.551047] (-) TimerEvent: {}
+[47.655446] (-) TimerEvent: {}
+[47.762031] (-) TimerEvent: {}
+[47.815269] (blacknav) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable odom_pub\x1b[0m\n'}
+[47.862615] (-) TimerEvent: {}
+[47.966841] (-) TimerEvent: {}
+[48.071344] (-) TimerEvent: {}
+[48.178709] (-) TimerEvent: {}
+[48.285953] (-) TimerEvent: {}
+[48.393262] (-) TimerEvent: {}
+[48.500547] (-) TimerEvent: {}
+[48.607643] (-) TimerEvent: {}
+[48.711670] (-) TimerEvent: {}
+[48.815798] (-) TimerEvent: {}
+[48.919900] (-) TimerEvent: {}
+[49.024592] (-) TimerEvent: {}
+[49.131867] (-) TimerEvent: {}
+[49.236209] (-) TimerEvent: {}
+[49.291382] (blacknav) StdoutLine: {'line': b'[100%] Built target odom_pub\n'}
+[49.336850] (-) TimerEvent: {}
+[49.440852] (-) TimerEvent: {}
+[49.482586] (blacknav) CommandEnded: {'returncode': 0}
+[49.508298] (blacknav) JobProgress: {'identifier': 'blacknav', 'progress': 'install'}
+[49.541365] (-) TimerEvent: {}
+[49.645265] (-) TimerEvent: {}
+[49.691763] (blacknav) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/blacknav/blacknav/build/blacknav'], 'cwd': '/home/blacknav/blacknav/build/blacknav', 'env': OrderedDict({'HOSTNAME': 'ER01', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/blacknav', 'OLDPWD': '/home/blacknav', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/home/blacknav/blacknav/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/blacknav/blacknav/install/blacknav:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/blacknav/blacknav/build/blacknav', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/blacknav/blacknav/install/blacknav:/opt/ros/jazzy'}), 'shell': False}
+[49.745792] (-) TimerEvent: {}
+[49.849700] (-) TimerEvent: {}
+[49.869785] (blacknav) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[49.885161] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/lib/blacknav/motor_controller\n'}
+[49.895583] (blacknav) StdoutLine: {'line': b'-- Installing: /home/blacknav/blacknav/install/blacknav/lib/blacknav/odom_pub\n'}
+[49.906984] (blacknav) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/blacknav/blacknav/install/blacknav/lib/blacknav/odom_pub" to ""\n'}
+[49.920163] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets/\n'}
+[49.938370] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//main_body.stl\n'}
+[49.945173] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//plug.stl\n'}
+[49.955893] (-) TimerEvent: {}
+[49.971544] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//wheel_joints.stl\n'}
+[49.987157] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//d415.stl\n'}
+[49.997434] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//realsense_tripod.part\n'}
+[50.010839] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_holder.part\n'}
+[50.028203] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_wheel.part\n'}
+[50.056333] (-) TimerEvent: {}
+[50.064321] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//right_wheel.stl\n'}
+[50.076225] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//left_wheel.stl\n'}
+[50.083216] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//left_wheel.part\n'}
+[50.093379] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//right_wheel.part\n'}
+[50.104874] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//main_body.part\n'}
+[50.111040] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_wheel.stl\n'}
+[50.117139] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//realsense_tripod.stl\n'}
+[50.123092] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//plug_collision.stl\n'}
+[50.133483] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_holder.stl\n'}
+[50.162146] (-) TimerEvent: {}
+[50.166783] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//wheel_joints.part\n'}
+[50.176202] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/ament_index/resource_index/package_run_dependencies/blacknav\n'}
+[50.182364] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/ament_index/resource_index/parent_prefix_path/blacknav\n'}
+[50.189044] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/ament_prefix_path.sh\n'}
+[50.197377] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/ament_prefix_path.dsv\n'}
+[50.204149] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/path.sh\n'}
+[50.213378] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/path.dsv\n'}
+[50.220647] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.bash\n'}
+[50.227103] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.sh\n'}
+[50.235456] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.zsh\n'}
+[50.241792] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.dsv\n'}
+[50.253987] (blacknav) StdoutLine: {'line': b'-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/package.dsv\n'}
+[50.261063] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/ament_index/resource_index/packages/blacknav\n'}
+[50.268599] (-) TimerEvent: {}
+[50.272245] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/cmake/blacknavConfig.cmake\n'}
+[50.281284] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/cmake/blacknavConfig-version.cmake\n'}
+[50.288146] (blacknav) StdoutLine: {'line': b'-- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/package.xml\n'}
+[50.294257] (blacknav) CommandEnded: {'returncode': 0}
+[50.369251] (-) TimerEvent: {}
+[50.480161] (-) TimerEvent: {}
+[50.584519] (-) TimerEvent: {}
+[50.693724] (-) TimerEvent: {}
+[50.802876] (-) TimerEvent: {}
+[50.911686] (-) TimerEvent: {}
+[51.023798] (-) TimerEvent: {}
+[51.080736] (blacknav) JobEnded: {'identifier': 'blacknav', 'rc': 0}
+[51.100536] (-) EventReactorShutdown: {}

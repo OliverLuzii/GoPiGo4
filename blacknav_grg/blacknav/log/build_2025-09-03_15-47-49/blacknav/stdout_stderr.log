@@ -1,0 +1,64 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+-- Found tf2: 0.36.12 (/opt/ros/jazzy/share/tf2/cmake)
+-- Found tf2_ros: 0.36.12 (/opt/ros/jazzy/share/tf2_ros/cmake)
+-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (64.6s)
+-- Generating done (0.5s)
+-- Build files have been written to: /home/blacknav/blacknav/build/blacknav
+[ 50%] [32mBuilding CXX object CMakeFiles/motor_controller.dir/src/motor_controller.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/odom_pub.dir/src/odom_pub.cpp.o[0m
+[01m[K/home/blacknav/blacknav/src/odom_pub.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.hpp: No such file or directory
+    7 | #include [01;31m[K"tf2_ros/transform_broadcaster.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/odom_pub.dir/build.make:76: CMakeFiles/odom_pub.dir/src/odom_pub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/odom_pub.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/blacknav/blacknav/src/motor_controller.cpp:[m[K In member function ‘[01m[Kvoid TwistSubscriber::[01;32m[Ktwist_callback[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/blacknav/blacknav/src/motor_controller.cpp:64:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((theta_dot_L >> 8) & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+   64 |             [01;35m[K((theta_dot_L >> 8) & 0xFF)[m[K,
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/blacknav/blacknav/src/motor_controller.cpp:65:26:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(theta_dot_L & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+   65 |             [01;35m[K(theta_dot_L & 0xFF)[m[K
+      |             [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/blacknav/blacknav/src/motor_controller.cpp:72:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((theta_dot_R >> 8) & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+   72 |             [01;35m[K((theta_dot_R >> 8) & 0xFF)[m[K,
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/blacknav/blacknav/src/motor_controller.cpp:73:27:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(theta_dot_R & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+   73 |             [01;35m[K(theta_dot_R  & 0xFF)[m[K
+      |             [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[ 75%] [32m[1mLinking CXX executable motor_controller[0m
+[ 75%] Built target motor_controller
+gmake: *** [Makefile:146: all] Error 2

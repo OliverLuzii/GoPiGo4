@@ -1,0 +1,49 @@
+[0.554s] Invoking command in '/home/blacknav/blacknav/build/blacknav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/blacknav/blacknav/build/blacknav -- -j12 -l12
+[1.956s] [ 50%] Built target motor_controller
+[2.218s] [ 75%] [32mBuilding CXX object CMakeFiles/odom_pub.dir/src/odom_pub.cpp.o[0m
+[27.855s] [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:[m[K In member function ‘[01m[Kdouble OdomPublisher::[01;32m[Kget_encoder_radians[m[K(unsigned int)[m[K’:
+[27.867s] [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:111:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kmessage_type[m[K’ from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[27.876s]   111 |             [01;35m[Kmessage_type[m[K,
+[27.882s]       |             [01;35m[K^~~~~~~~~~~~[m[K
+[47.625s] [100%] [32m[1mLinking CXX executable odom_pub[0m
+[49.092s] [100%] Built target odom_pub
+[49.278s] Invoked command in '/home/blacknav/blacknav/build/blacknav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/blacknav/blacknav/build/blacknav -- -j12 -l12
+[49.487s] Invoking command in '/home/blacknav/blacknav/build/blacknav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/blacknav/blacknav/build/blacknav
+[49.677s] -- Install configuration: ""
+[49.692s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/lib/blacknav/motor_controller
+[49.703s] -- Installing: /home/blacknav/blacknav/install/blacknav/lib/blacknav/odom_pub
+[49.716s] -- Set non-toolchain portion of runtime path of "/home/blacknav/blacknav/install/blacknav/lib/blacknav/odom_pub" to ""
+[49.729s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets/
+[49.735s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//main_body.stl
+[49.742s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//plug.stl
+[49.758s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//wheel_joints.stl
+[49.765s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//d415.stl
+[49.772s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//realsense_tripod.part
+[49.778s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_holder.part
+[49.789s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_wheel.part
+[49.799s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//right_wheel.stl
+[49.812s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//left_wheel.stl
+[49.819s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//left_wheel.part
+[49.826s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//right_wheel.part
+[49.834s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//main_body.part
+[49.842s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_wheel.stl
+[49.849s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//realsense_tripod.stl
+[49.860s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//plug_collision.stl
+[49.866s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_holder.stl
+[49.872s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//wheel_joints.part
+[49.881s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/ament_index/resource_index/package_run_dependencies/blacknav
+[49.892s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/ament_index/resource_index/parent_prefix_path/blacknav
+[49.906s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/ament_prefix_path.sh
+[49.914s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/ament_prefix_path.dsv
+[49.922s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/path.sh
+[49.930s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/path.dsv
+[49.936s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.bash
+[49.944s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.sh
+[49.951s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.zsh
+[49.958s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.dsv
+[49.966s] -- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/package.dsv
+[49.973s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/ament_index/resource_index/packages/blacknav
+[49.979s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/cmake/blacknavConfig.cmake
+[49.988s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/cmake/blacknavConfig-version.cmake
+[49.999s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/package.xml
+[50.007s] Invoked command in '/home/blacknav/blacknav/build/blacknav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/blacknav/blacknav/build/blacknav

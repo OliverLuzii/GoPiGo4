@@ -1,0 +1,96 @@
+[0.638s] Invoking command in '/home/blacknav/blacknav/build/blacknav': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/blacknav/blacknav -DCMAKE_INSTALL_PREFIX=/home/blacknav/blacknav/install/blacknav
+[1.444s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[13.975s] -- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+[15.499s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[16.239s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[17.069s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[18.038s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[22.956s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[23.092s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[24.950s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[30.125s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[32.489s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[34.409s] -- Found tf2: 0.36.14 (/opt/ros/jazzy/share/tf2/cmake)
+[34.641s] -- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[42.260s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[49.095s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[49.112s] -- Configured cppcheck include dirs: 
+[49.118s] -- Configured cppcheck exclude dirs and/or files: 
+[49.160s] -- Added test 'flake8' to check Python code syntax and style conventions
+[49.167s] -- Configured 'flake8' exclude dirs and/or files: 
+[49.237s] -- Added test 'lint_cmake' to check CMake code style
+[49.283s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[49.539s] -- Added test 'uncrustify' to check C / C++ code style
+[49.557s] -- Configured uncrustify additional arguments: 
+[49.586s] -- Added test 'xmllint' to check XML markup files
+[49.624s] -- Configuring done (48.6s)
+[50.747s] -- Generating done (0.7s)
+[51.210s] -- Build files have been written to: /home/blacknav/blacknav/build/blacknav
+[51.315s] Invoked command in '/home/blacknav/blacknav/build/blacknav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/blacknav/blacknav -DCMAKE_INSTALL_PREFIX=/home/blacknav/blacknav/install/blacknav
+[51.380s] Invoking command in '/home/blacknav/blacknav/build/blacknav': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/blacknav/blacknav/build/blacknav -- -j12 -l12
+[52.850s] [ 25%] [32mBuilding CXX object CMakeFiles/motor_controller.dir/src/motor_controller.cpp.o[0m
+[53.002s] [ 50%] [32mBuilding CXX object CMakeFiles/odom_pub.dir/src/odom_pub.cpp.o[0m
+[73.568s] [01m[K/home/blacknav/blacknav/src/motor_controller.cpp:[m[K In member function ‘[01m[Kvoid TwistSubscriber::[01;32m[Ktwist_callback[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr) const[m[K’:
+[73.575s] [01m[K/home/blacknav/blacknav/src/motor_controller.cpp:79:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((theta_dot_L >> 8) & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[73.581s]    79 |             [01;35m[K((theta_dot_L >> 8) & 0xFF)[m[K,
+[73.588s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[73.594s] [01m[K/home/blacknav/blacknav/src/motor_controller.cpp:80:26:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(theta_dot_L & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[73.601s]    80 |             [01;35m[K(theta_dot_L & 0xFF)[m[K
+[73.607s]       |             [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[73.614s] [01m[K/home/blacknav/blacknav/src/motor_controller.cpp:87:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((theta_dot_R >> 8) & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[73.620s]    87 |             [01;35m[K((theta_dot_R >> 8) & 0xFF)[m[K,
+[73.627s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[73.637s] [01m[K/home/blacknav/blacknav/src/motor_controller.cpp:88:27:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(theta_dot_R & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[73.643s]    88 |             [01;35m[K(theta_dot_R  & 0xFF)[m[K
+[73.650s]       |             [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[82.174s] [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:[m[K In member function ‘[01m[Kdouble OdomPublisher::[01;32m[Kget_encoder_radians[m[K(unsigned int)[m[K’:
+[82.181s] [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:134:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kmessage_type[m[K’ from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[82.188s]   134 |             [01;35m[Kmessage_type[m[K,
+[82.194s]       |             [01;35m[K^~~~~~~~~~~~[m[K
+[110.024s] [ 75%] [32m[1mLinking CXX executable odom_pub[0m
+[111.702s] [ 75%] Built target odom_pub
+[120.333s] [100%] [32m[1mLinking CXX executable motor_controller[0m
+[122.080s] [100%] Built target motor_controller
+[122.261s] Invoked command in '/home/blacknav/blacknav/build/blacknav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/blacknav/blacknav/build/blacknav -- -j12 -l12
+[122.470s] Invoking command in '/home/blacknav/blacknav/build/blacknav': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/blacknav/blacknav/build/blacknav
+[122.645s] -- Install configuration: ""
+[122.675s] -- Installing: /home/blacknav/blacknav/install/blacknav/lib/blacknav/motor_controller
+[122.703s] -- Set non-toolchain portion of runtime path of "/home/blacknav/blacknav/install/blacknav/lib/blacknav/motor_controller" to ""
+[122.810s] -- Installing: /home/blacknav/blacknav/install/blacknav/lib/blacknav/odom_pub
+[122.821s] -- Set non-toolchain portion of runtime path of "/home/blacknav/blacknav/install/blacknav/lib/blacknav/odom_pub" to ""
+[122.841s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets/
+[122.848s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//main_body.stl
+[122.855s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//plug.stl
+[122.861s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//wheel_joints.stl
+[122.867s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//d415.stl
+[122.873s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//realsense_tripod.part
+[122.879s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_holder.part
+[122.886s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_wheel.part
+[122.892s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//right_wheel.stl
+[122.898s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//left_wheel.stl
+[122.903s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//left_wheel.part
+[122.909s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//right_wheel.part
+[122.915s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//main_body.part
+[122.938s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_wheel.stl
+[122.952s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//realsense_tripod.stl
+[122.962s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//plug_collision.stl
+[122.968s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_holder.stl
+[122.991s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//wheel_joints.part
+[122.998s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets/
+[123.035s] -- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//gopigo.urdf
+[123.051s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/ament_index/resource_index/package_run_dependencies/blacknav
+[123.058s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/ament_index/resource_index/parent_prefix_path/blacknav
+[123.066s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/ament_prefix_path.sh
+[123.073s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/ament_prefix_path.dsv
+[123.080s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/path.sh
+[123.088s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/path.dsv
+[123.095s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.bash
+[123.106s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.sh
+[123.116s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.zsh
+[123.124s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.dsv
+[123.132s] -- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/package.dsv
+[123.139s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/ament_index/resource_index/packages/blacknav
+[123.151s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/cmake/blacknavConfig.cmake
+[123.158s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/cmake/blacknavConfig-version.cmake
+[123.165s] -- Up-to-date: /home/blacknav/blacknav/install/blacknav/share/blacknav/package.xml
+[123.172s] Invoked command in '/home/blacknav/blacknav/build/blacknav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/blacknav/blacknav/build/blacknav

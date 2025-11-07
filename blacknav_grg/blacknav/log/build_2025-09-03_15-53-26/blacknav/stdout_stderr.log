@@ -1,0 +1,49 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/odom_pub.dir/src/odom_pub.cpp.o[0m
+[ 75%] Built target motor_controller
+[01m[K/home/blacknav/blacknav/src/odom_pub.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/blacknav/blacknav/src/odom_pub.cpp:22:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   22 | int main([01;35m[Kint argc[m[K, char * argv[])
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/blacknav/blacknav/src/odom_pub.cpp:22:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   22 | int main(int argc, [01;35m[Kchar * argv[][m[K)
+      |                    [01;35m[K~~~~~~~^~~~~~[m[K
+[100%] [32m[1mLinking CXX executable odom_pub[0m
+[100%] Built target odom_pub
+-- Install configuration: ""
+-- Installing: /home/blacknav/blacknav/install/blacknav/lib/blacknav/motor_controller
+-- Set non-toolchain portion of runtime path of "/home/blacknav/blacknav/install/blacknav/lib/blacknav/motor_controller" to ""
+-- Installing: /home/blacknav/blacknav/install/blacknav/lib/blacknav/odom_pub
+-- Set non-toolchain portion of runtime path of "/home/blacknav/blacknav/install/blacknav/lib/blacknav/odom_pub" to ""
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets/
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//main_body.stl
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//plug.stl
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//wheel_joints.stl
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//d415.stl
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//realsense_tripod.part
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_holder.part
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_wheel.part
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//right_wheel.stl
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//left_wheel.stl
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//left_wheel.part
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//right_wheel.part
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//main_body.part
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_wheel.stl
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//realsense_tripod.stl
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//plug_collision.stl
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//caster_holder.stl
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/assets//wheel_joints.part
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/ament_index/resource_index/package_run_dependencies/blacknav
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/ament_index/resource_index/parent_prefix_path/blacknav
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/ament_prefix_path.sh
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/ament_prefix_path.dsv
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/path.sh
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/environment/path.dsv
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.bash
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.sh
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.zsh
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/local_setup.dsv
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/package.dsv
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/ament_index/resource_index/packages/blacknav
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/cmake/blacknavConfig.cmake
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/cmake/blacknavConfig-version.cmake
+-- Installing: /home/blacknav/blacknav/install/blacknav/share/blacknav/package.xml

@@ -1,0 +1,101 @@
+[6.854s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--cmake-args', '-DCMAKE_EXPORT_COMPILE_COMMANDS=On']
+[6.861s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=['-DCMAKE_EXPORT_COMPILE_COMMANDS=On'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fd60ae69100>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd60ae68d40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd60ae68d40>>, mixin_verb=('build',))
+[9.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[9.402s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[9.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[9.404s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[9.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[9.410s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[9.412s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/blacknav/blacknav'
+[9.416s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[9.422s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[9.426s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[9.430s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[9.431s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[9.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[9.435s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[9.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[9.438s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[11.568s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'blacknav'
+[11.570s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[11.574s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[11.575s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[11.577s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[11.578s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[12.752s] Level 5:colcon.colcon_core.verb:set package 'blacknav' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=On']'
+[12.754s] Level 5:colcon.colcon_core.verb:set package 'blacknav' build argument 'cmake_target' from command line to 'None'
+[12.755s] Level 5:colcon.colcon_core.verb:set package 'blacknav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[12.757s] Level 5:colcon.colcon_core.verb:set package 'blacknav' build argument 'cmake_clean_cache' from command line to 'False'
+[12.758s] Level 5:colcon.colcon_core.verb:set package 'blacknav' build argument 'cmake_clean_first' from command line to 'False'
+[12.760s] Level 5:colcon.colcon_core.verb:set package 'blacknav' build argument 'cmake_force_configure' from command line to 'False'
+[12.761s] Level 5:colcon.colcon_core.verb:set package 'blacknav' build argument 'ament_cmake_args' from command line to 'None'
+[12.763s] Level 5:colcon.colcon_core.verb:set package 'blacknav' build argument 'catkin_cmake_args' from command line to 'None'
+[12.764s] Level 5:colcon.colcon_core.verb:set package 'blacknav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[12.767s] DEBUG:colcon.colcon_core.verb:Building package 'blacknav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blacknav/blacknav/build/blacknav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=On'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blacknav/blacknav/install/blacknav', 'merge_install': False, 'path': '/home/blacknav/blacknav', 'symlink_install': False, 'test_result_base': None}
+[12.771s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[12.816s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[12.825s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/blacknav/blacknav' with build type 'ament_cmake'
+[12.831s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/blacknav/blacknav'
+[12.930s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[12.940s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.942s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blacknav/blacknav/build/blacknav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/blacknav/blacknav/build/blacknav -- -j12 -l12
+[86.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blacknav/blacknav/build/blacknav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/blacknav/blacknav/build/blacknav -- -j12 -l12
+[86.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blacknav/blacknav/build/blacknav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/blacknav/blacknav/build/blacknav
+[87.153s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(blacknav)
+[87.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blacknav/blacknav/build/blacknav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/blacknav/blacknav/build/blacknav
+[87.487s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav' for CMake module files
+[87.534s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav' for CMake config files
+[87.544s] Level 1:colcon.colcon_core.shell:create_environment_hook('blacknav', 'cmake_prefix_path')
+[87.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blacknav/blacknav/install/blacknav/share/blacknav/hook/cmake_prefix_path.ps1'
+[87.580s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blacknav/blacknav/install/blacknav/share/blacknav/hook/cmake_prefix_path.dsv'
+[87.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blacknav/blacknav/install/blacknav/share/blacknav/hook/cmake_prefix_path.sh'
+[87.648s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav/lib'
+[87.655s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav/bin'
+[87.658s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav/lib/pkgconfig/blacknav.pc'
+[87.708s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav/lib/python3.12/site-packages'
+[87.718s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav/bin'
+[87.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/blacknav/blacknav/install/blacknav/share/blacknav/package.ps1'
+[87.775s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blacknav/blacknav/install/blacknav/share/blacknav/package.dsv'
+[87.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/blacknav/blacknav/install/blacknav/share/blacknav/package.sh'
+[87.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/blacknav/blacknav/install/blacknav/share/blacknav/package.bash'
+[87.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/blacknav/blacknav/install/blacknav/share/blacknav/package.zsh'
+[87.919s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blacknav/blacknav/install/blacknav/share/colcon-core/packages/blacknav)
+[87.940s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(blacknav)
+[87.950s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav' for CMake module files
+[87.996s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav' for CMake config files
+[88.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('blacknav', 'cmake_prefix_path')
+[88.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blacknav/blacknav/install/blacknav/share/blacknav/hook/cmake_prefix_path.ps1'
+[88.033s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blacknav/blacknav/install/blacknav/share/blacknav/hook/cmake_prefix_path.dsv'
+[88.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blacknav/blacknav/install/blacknav/share/blacknav/hook/cmake_prefix_path.sh'
+[88.084s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav/lib'
+[88.087s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav/bin'
+[88.090s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav/lib/pkgconfig/blacknav.pc'
+[88.101s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav/lib/python3.12/site-packages'
+[88.110s] Level 1:colcon.colcon_core.environment:checking '/home/blacknav/blacknav/install/blacknav/bin'
+[88.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/blacknav/blacknav/install/blacknav/share/blacknav/package.ps1'
+[88.145s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blacknav/blacknav/install/blacknav/share/blacknav/package.dsv'
+[88.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/blacknav/blacknav/install/blacknav/share/blacknav/package.sh'
+[88.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/blacknav/blacknav/install/blacknav/share/blacknav/package.bash'
+[88.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/blacknav/blacknav/install/blacknav/share/blacknav/package.zsh'
+[88.244s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blacknav/blacknav/install/blacknav/share/colcon-core/packages/blacknav)
+[88.251s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[88.268s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[88.270s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[88.272s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[88.484s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[88.487s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[88.491s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[88.493s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[88.498s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[88.500s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[88.508s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blacknav/blacknav/install/local_setup.ps1'
+[88.558s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/blacknav/blacknav/install/_local_setup_util_ps1.py'
+[88.644s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blacknav/blacknav/install/setup.ps1'
+[88.685s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blacknav/blacknav/install/local_setup.sh'
+[88.713s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/blacknav/blacknav/install/_local_setup_util_sh.py'
+[88.743s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blacknav/blacknav/install/setup.sh'
+[88.788s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blacknav/blacknav/install/local_setup.bash'
+[88.812s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blacknav/blacknav/install/setup.bash'
+[88.852s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blacknav/blacknav/install/local_setup.zsh'
+[88.874s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blacknav/blacknav/install/setup.zsh'

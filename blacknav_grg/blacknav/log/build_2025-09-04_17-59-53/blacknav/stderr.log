@@ -1,0 +1,4 @@
+[01m[K/home/blacknav/blacknav/src/odom_pub.cpp:[m[K In member function ‘[01m[Kdouble OdomPublisher::[01;32m[Kget_encoder_radians[m[K(unsigned int)[m[K’:
+[01m[K/home/blacknav/blacknav/src/odom_pub.cpp:121:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kmessage_type[m[K’ from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  121 |             [01;35m[Kmessage_type[m[K,
+      |             [01;35m[K^~~~~~~~~~~~[m[K

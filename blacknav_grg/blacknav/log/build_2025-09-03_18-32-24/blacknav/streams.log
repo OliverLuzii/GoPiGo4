@@ -1,0 +1,36 @@
+[0.614s] Invoking command in '/home/blacknav/blacknav/build/blacknav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/blacknav/blacknav/build/blacknav -- -j12 -l12
+[2.244s] [ 50%] Built target motor_controller
+[2.526s] [ 75%] [32mBuilding CXX object CMakeFiles/odom_pub.dir/src/odom_pub.cpp.o[0m
+[33.463s] [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:[m[K In constructor ‘[01m[KOdomPublisher::[01;32m[KOdomPublisher[m[K()[m[K’:
+[33.477s] [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:49:27:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K< 0[m[K’ is always false [[01;35m[K-Wtype-limits[m[K]
+[33.483s]    49 |         if ([01;35m[Kpigpio_handle < 0[m[K) {
+[33.489s]       |             [01;35m[K~~~~~~~~~~~~~~^~~[m[K
+[33.497s] [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:54:24:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K< 0[m[K’ is always false [[01;35m[K-Wtype-limits[m[K]
+[33.503s]    54 |         if ([01;35m[Kspi_handle < 0[m[K) {
+[33.519s]       |             [01;35m[K~~~~~~~~~~~^~~[m[K
+[33.526s] [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:[m[K In member function ‘[01m[Kdouble OdomPublisher::[01;32m[Kget_encoder_radians[m[K(unsigned int)[m[K’:
+[33.533s] [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:92:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kmessage_type[m[K’ from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[33.540s]    92 |             [01;35m[Kmessage_type[m[K,
+[33.546s]       |             [01;35m[K^~~~~~~~~~~~[m[K
+[33.557s] [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[33.565s] [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:161:17:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kspin(std::shared_ptr<OdomPublisher>)[m[K’
+[33.571s]   161 |     [01;31m[Krclcpp::spin(std::make_shared<OdomPublisher>())[m[K;
+[33.579s]       |     [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[33.585s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+[33.593s]                  from [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:9[m[K:
+[33.600s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:58:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::[01;32m[Kspin[m[K(node_interfaces::NodeBaseInterface::SharedPtr)[m[K’
+[33.606s]    58 | [01;36m[Kspin[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+[33.617s]       | [01;36m[K^~~~[m[K
+[33.624s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:58:60:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[KOdomPublisher[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Krclcpp::node_interfaces::NodeBaseInterface[m[K>[m[K’
+[33.630s]    58 | spin([01;36m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr[m[K);
+[33.636s]       |      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[33.644s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:62:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::[01;32m[Kspin[m[K(Node::SharedPtr)[m[K’
+[33.650s]    62 | [01;36m[Kspin[m[K(rclcpp::Node::SharedPtr node_ptr);
+[33.656s]       | [01;36m[K^~~~[m[K
+[33.662s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:62:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[KOdomPublisher[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Krclcpp::Node[m[K>[m[K’
+[33.670s]    62 | spin([01;36m[Krclcpp::Node::SharedPtr node_ptr[m[K);
+[33.676s]       |      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[44.135s] gmake[2]: *** [CMakeFiles/odom_pub.dir/build.make:76: CMakeFiles/odom_pub.dir/src/odom_pub.cpp.o] Error 1
+[44.143s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/odom_pub.dir/all] Error 2
+[44.149s] gmake: *** [Makefile:146: all] Error 2
+[44.188s] Invoked command in '/home/blacknav/blacknav/build/blacknav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/blacknav/blacknav/build/blacknav -- -j12 -l12

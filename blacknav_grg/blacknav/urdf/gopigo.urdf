@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot name="gopigo3">
+  <!-- Link main_body -->
+  <link name="main_body">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0329648 6.86601e-18 0.0213989"/>
+      <mass value="1.10932"/>
+      <inertia ixx="0.00119512" ixy="-2.87996e-22" ixz="-8.19693e-06" iyy="0.00425749" iyz="-2.02418e-21" izz="0.00509302"/>
+    </inertial>
+    <!-- Part wheel_joints -->
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.138 -0.0525 0"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/wheel_joints.stl"/>
+      </geometry>
+      <material name="wheel_joints_material">
+        <color rgba="0.768627 0.886275 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.138 -0.0525 0"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/wheel_joints.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part main_body -->
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.138 -0.0525 0"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/main_body.stl"/>
+      </geometry>
+      <material name="main_body_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.138 -0.0525 0"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/main_body.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part realsense_tripod -->
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.138 -0.0525 0"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/realsense_tripod.stl"/>
+      </geometry>
+      <material name="realsense_tripod_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.138 -0.0525 0"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/realsense_tripod.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part caster_holder -->
+    <visual>
+      <origin rpy="0 -0 0" xyz="-0.138 -0.0525 0"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/caster_holder.stl"/>
+      </geometry>
+      <material name="caster_holder_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 -0 0" xyz="-0.138 -0.0525 0"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/caster_holder.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame realsense (dummy link + fixed joint) -->
+  <link name="realsense">
+    <origin rpy="0 -0 0" xyz="0 0 0"/>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="realsense_frame" type="fixed">
+    <origin rpy="0 -0 0" xyz="0.042 0 0.08618"/>
+    <parent link="main_body"/>
+    <child link="realsense"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Link caster_wheel -->
+  <link name="caster_wheel">
+    <inertial>
+      <origin rpy="0 0 0" xyz="6.93889e-18 -6.93889e-18 6.93889e-18"/>
+      <mass value="0.0268719"/>
+      <inertia ixx="3.4826e-06" ixy="7.11277e-39" ixz="2.83045e-22" iyy="3.4826e-06" iyz="-1.93215e-38" izz="3.4826e-06"/>
+    </inertial>
+    <!-- Part caster_wheel -->
+    <visual>
+      <origin rpy="-9.93323e-34 -2.57628e-17 2.04237e-33" xyz="-0.028 -0.0525 0.03025"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/caster_wheel.stl"/>
+      </geometry>
+      <material name="caster_wheel_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="-9.93323e-34 -2.57628e-17 2.04237e-33" xyz="-0.028 -0.0525 0.03025"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/caster_wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from main_body to caster_wheel -->
+  <joint name="caster" type="fixed">
+    <origin rpy="1.86333e-17 0.523599 8.23044e-18" xyz="-0.11 0 -0.03025"/>
+    <parent link="main_body"/>
+    <child link="caster_wheel"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link right_wheel -->
+  <link name="right_wheel">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-2.77556e-17 0 -0.0127"/>
+      <mass value="0.097042"/>
+      <inertia ixx="3.20388e-05" ixy="-7.6915e-24" ixz="7.70303e-38" iyy="3.20388e-05" iyz="-5.89179e-37" izz="5.3643e-05"/>
+    </inertial>
+    <!-- Part right_wheel -->
+    <visual>
+      <origin rpy="1.5708 -2.54873e-33 -1.32134e-18" xyz="-0.138 -0.015 0"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/right_wheel.stl"/>
+      </geometry>
+      <material name="right_wheel_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="1.5708 -2.54873e-33 -1.32134e-18" xyz="-0.138 -0.015 0"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/right_wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from main_body to right_wheel -->
+  <joint name="right_wheel" type="continuous">
+    <origin rpy="-1.5708 -0.0391331 1.74851e-17" xyz="0 -0.0525 -0.015"/>
+    <parent link="main_body"/>
+    <child link="right_wheel"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link left_wheel -->
+  <link name="left_wheel">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 -1.73472e-18 0.0127"/>
+      <mass value="0.097042"/>
+      <inertia ixx="3.20388e-05" ixy="1.02554e-21" ixz="2.16687e-37" iyy="3.20388e-05" iyz="-8.83342e-38" izz="5.3643e-05"/>
+    </inertial>
+    <!-- Part left_wheel -->
+    <visual>
+      <origin rpy="1.5708 2.40396e-33 1.61442e-18" xyz="-0.138 -0.015 -0.105"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/left_wheel.stl"/>
+      </geometry>
+      <material name="left_wheel_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="1.5708 2.40396e-33 1.61442e-18" xyz="-0.138 -0.015 -0.105"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/left_wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from main_body to left_wheel -->
+  <joint name="left_wheel" type="continuous">
+    <origin rpy="1.5708 -0.654829 -3.14159" xyz="0 0.0525 -0.015"/>
+    <parent link="main_body"/>
+    <child link="left_wheel"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <material name="aluminum">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
+  <material name="plastic">
+    <color rgba="0.1 0.1 0.1 1"/>
+  </material>
+  <!-- camera body, with origin at bottom screw mount -->
+  <link name="base_link"/>
+  <joint name="camera_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="camera_bottom_screw_frame"/>
+  </joint>
+  <link name="camera_bottom_screw_frame"/>
+  <joint name="camera_link_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0.02 0.0115"/>
+    <parent link="camera_bottom_screw_frame"/>
+    <child link="camera_link"/>
+  </joint>
+  <link name="camera_link">
+    <visual>
+      <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.00987 -0.02 0"/>
+      <geometry>
+        <mesh filename="package://blacknav/assets/d415.stl"/>
+      </geometry>
+      <material name="aluminum"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -0.02 0"/>
+      <geometry>
+        <box size="0.02005 0.099 0.023"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.072"/>
+      <!-- The following are not reliable values, and should not be used for modeling -->
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.003881243" ixy="0.0" ixz="0.0" iyy="0.000498940" iyz="0.0" izz="0.003879257"/>
+    </inertial>
+  </link>
+  <!-- camera depth joints and links -->
+  <joint name="camera_depth_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="camera_link"/>
+    <child link="camera_depth_frame"/>
+  </joint>
+  <link name="camera_depth_frame"/>
+  <joint name="camera_depth_optical_joint" type="fixed">
+    <origin rpy="-1.5707963267948966 0 -1.5707963267948966" xyz="0 0 0"/>
+    <parent link="camera_depth_frame"/>
+    <child link="camera_depth_optical_frame"/>
+  </joint>
+  <link name="camera_depth_optical_frame"/>
+  <!-- camera left IR joints and links -->
+  <joint name="camera_infra1_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0.0 0"/>
+    <parent link="camera_link"/>
+    <child link="camera_infra1_frame"/>
+  </joint>
+  <link name="camera_infra1_frame"/>
+  <joint name="camera_infra1_optical_joint" type="fixed">
+    <origin rpy="-1.5707963267948966 0 -1.5707963267948966" xyz="0 0 0"/>
+    <parent link="camera_infra1_frame"/>
+    <child link="camera_infra1_optical_frame"/>
+  </joint>
+  <link name="camera_infra1_optical_frame"/>
+  <!-- camera right IR joints and links -->
+  <joint name="camera_infra2_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 -0.055 0"/>
+    <parent link="camera_link"/>
+    <child link="camera_infra2_frame"/>
+  </joint>
+  <link name="camera_infra2_frame"/>
+  <joint name="camera_infra2_optical_joint" type="fixed">
+    <origin rpy="-1.5707963267948966 0 -1.5707963267948966" xyz="0 0 0"/>
+    <parent link="camera_infra2_frame"/>
+    <child link="camera_infra2_optical_frame"/>
+  </joint>
+  <link name="camera_infra2_optical_frame"/>
+  <!-- camera color joints and links -->
+  <joint name="camera_color_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0.015 0"/>
+    <parent link="camera_link"/>
+    <child link="camera_color_frame"/>
+  </joint>
+  <link name="camera_color_frame"/>
+  <joint name="camera_color_optical_joint" type="fixed">
+    <origin rpy="-1.5707963267948966 0 -1.5707963267948966" xyz="0 0 0"/>
+    <parent link="camera_color_frame"/>
+    <child link="camera_color_optical_frame"/>
+  </joint>
+  <link name="camera_color_optical_frame"/>
+  <joint name="realsense_camera" type="fixed">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <parent link="realsense"/>
+    <child link="base_link"/>
+    <axis xyz="0.0 0.0 0.0"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+</robot>

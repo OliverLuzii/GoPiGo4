@@ -1,0 +1,68 @@
+[0.498s] Invoking command in '/home/blacknav/blacknav/build/blacknav': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/blacknav/blacknav -DCMAKE_EXPORT_COMPILE_COMMANDS=On -DCMAKE_INSTALL_PREFIX=/home/blacknav/blacknav/install/blacknav
+[2.892s] -- The C compiler identification is GNU 13.3.0
+[4.664s] -- The CXX compiler identification is GNU 13.3.0
+[5.242s] -- Detecting C compiler ABI info
+[7.604s] -- Detecting C compiler ABI info - done
+[8.700s] -- Check for working C compiler: /usr/bin/cc - skipped
+[8.710s] -- Detecting C compile features
+[8.755s] -- Detecting C compile features - done
+[9.077s] -- Detecting CXX compiler ABI info
+[11.314s] -- Detecting CXX compiler ABI info - done
+[12.491s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[12.501s] -- Detecting CXX compile features
+[12.535s] -- Detecting CXX compile features - done
+[12.632s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[20.509s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[26.357s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[27.880s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[28.680s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[29.578s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[30.663s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[35.555s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[35.642s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[38.331s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[38.982s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[39.963s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[44.782s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[47.080s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[49.194s] -- Found tf2: 0.36.12 (/opt/ros/jazzy/share/tf2/cmake)
+[49.472s] -- Found tf2_ros: 0.36.12 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[58.067s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[65.220s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[65.245s] -- Configured cppcheck include dirs: 
+[65.251s] -- Configured cppcheck exclude dirs and/or files: 
+[65.304s] -- Added test 'lint_cmake' to check CMake code style
+[65.440s] -- Added test 'uncrustify' to check C / C++ code style
+[65.449s] -- Configured uncrustify additional arguments: 
+[65.491s] -- Added test 'xmllint' to check XML markup files
+[65.556s] -- Configuring done (64.6s)
+[66.446s] -- Generating done (0.5s)
+[66.936s] -- Build files have been written to: /home/blacknav/blacknav/build/blacknav
+[67.059s] Invoked command in '/home/blacknav/blacknav/build/blacknav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/blacknav/blacknav -DCMAKE_EXPORT_COMPILE_COMMANDS=On -DCMAKE_INSTALL_PREFIX=/home/blacknav/blacknav/install/blacknav
+[67.136s] Invoking command in '/home/blacknav/blacknav/build/blacknav': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/blacknav/blacknav/build/blacknav -- -j12 -l12
+[68.453s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_controller.dir/src/motor_controller.cpp.o[0m
+[68.467s] [ 50%] [32mBuilding CXX object CMakeFiles/odom_pub.dir/src/odom_pub.cpp.o[0m
+[70.587s] [01m[K/home/blacknav/blacknav/src/odom_pub.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.hpp: No such file or directory
+[70.598s]     7 | #include [01;31m[K"tf2_ros/transform_broadcaster.hpp"[m[K
+[70.610s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[70.621s] compilation terminated.
+[70.632s] gmake[2]: *** [CMakeFiles/odom_pub.dir/build.make:76: CMakeFiles/odom_pub.dir/src/odom_pub.cpp.o] Error 1
+[70.643s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/odom_pub.dir/all] Error 2
+[70.651s] gmake[1]: *** Waiting for unfinished jobs....
+[88.503s] [01m[K/home/blacknav/blacknav/src/motor_controller.cpp:[m[K In member function ‘[01m[Kvoid TwistSubscriber::[01;32m[Ktwist_callback[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr) const[m[K’:
+[88.510s] [01m[K/home/blacknav/blacknav/src/motor_controller.cpp:64:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((theta_dot_L >> 8) & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[88.517s]    64 |             [01;35m[K((theta_dot_L >> 8) & 0xFF)[m[K,
+[88.524s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[88.534s] [01m[K/home/blacknav/blacknav/src/motor_controller.cpp:65:26:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(theta_dot_L & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[88.540s]    65 |             [01;35m[K(theta_dot_L & 0xFF)[m[K
+[88.548s]       |             [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[88.554s] [01m[K/home/blacknav/blacknav/src/motor_controller.cpp:72:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((theta_dot_R >> 8) & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[88.561s]    72 |             [01;35m[K((theta_dot_R >> 8) & 0xFF)[m[K,
+[88.568s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[88.575s] [01m[K/home/blacknav/blacknav/src/motor_controller.cpp:73:27:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(theta_dot_R & 255)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[88.582s]    73 |             [01;35m[K(theta_dot_R  & 0xFF)[m[K
+[88.588s]       |             [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[137.824s] [ 75%] [32m[1mLinking CXX executable motor_controller[0m
+[140.033s] [ 75%] Built target motor_controller
+[140.056s] gmake: *** [Makefile:146: all] Error 2
+[140.096s] Invoked command in '/home/blacknav/blacknav/build/blacknav' returned '2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/blacknav/blacknav/build/blacknav -- -j12 -l12
